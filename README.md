@@ -1,2 +1,4 @@
 # Capstone1
-A project for class
+An analysis of Craigslist listings in the 'For Sale' Category for various cities in the US.
+
+
