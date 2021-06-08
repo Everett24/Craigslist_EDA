@@ -15,6 +15,8 @@ from scrapy.crawler import CrawlerProcess
 client = MongoClient('localhost',27017)
 craigslist = client['craigslist']
 listings = craigslist['all_listings']
+listings.drop()#########################################comment this out beofre the next run you fool
+listings = craigslist['all_listings']
 
 class CraigslistScraper(scrapy.Spider):
     name = 'craigslist'
@@ -31,9 +33,9 @@ class CraigslistScraper(scrapy.Spider):
             #states.extend(response.xpath("(//div[@class = 'box box_{}'])[1]/h4/text()".format(i)).extract())
             city_links.extend(response.xpath("(//div[@class = 'box box_{}'])[1]/ul/li/a/@href".format(i)).extract())
 
-        #for l in city_links:
-        l = city_links[0]
-        yield response.follow(l,callback=self.to_forsale)
+        for l in city_links:
+            #l = city_links[0]
+            yield response.follow(l,callback=self.to_forsale)
 
     def to_forsale(self,response):
         next_page_url = str(response.request.url)[:-1] + str(response.xpath("//a[@class = 'sss']/@href").extract()[0])
@@ -80,8 +82,8 @@ class CraigslistScraper(scrapy.Spider):
         attrs = response.xpath("//p[@class = 'attrgroup']/span/text()").extract()
             #check if they exist
         #images
-            #see if thumbnails works
-        img_cnt = response.xpath("//a[@class = 'thumb']").extract().count()
+            #see if thumbnails works`
+        img_cnt = len(response.xpath("//a[@class = 'thumb']").extract())
             
         item = {
             'post_id':post_id,
@@ -94,8 +96,8 @@ class CraigslistScraper(scrapy.Spider):
             'image_count':img_cnt,
             'attrs':attrs
         }
-        print(item)
-        #listings.insert_one(item)
+        #pprint.pprint(item)
+        listings.insert_one(item)
 
 
 
@@ -105,6 +107,8 @@ process = CrawlerProcess({
 
 process.crawl(CraigslistScraper)
 process.start()
-#process.stop()
+process.stop()
 
-listings.estimated_document_count()
+#pprint.pprint(listings.find_one())
+#print(listings.estimated_document_count())
+#pprint.pprint(list(listings.aggregate([{"$sample":{"size":1}}])))
