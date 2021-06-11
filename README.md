@@ -19,6 +19,12 @@ The focuses for this step is to set all data to the proper type and remove null 
 ## View in Graph form (Matplotlib,Plotly)
 Both for exploration and presentation this step allows you to get a feel for what the data means.
 
+# Want to run it yourself?
+1. Make sure you have all dependencies (see below)
+2. Run webscraper.py
+3. Initialize and run pandas_processor.py
+4. Explore and graph to you hearts content
+
 ### Whats being explored
 
 [Per City]
@@ -31,10 +37,12 @@ Both for exploration and presentation this step allows you to get a feel for wha
 
 
 
-# The project you are viewing is most likely incomplete
-## Be sure to check fo updates in the future
+## The project you are viewing is most likely incomplete
+### Be sure to check fo updates in the future
 
 
+# Required Dependencies
+Numpy, Pandas, Scipy, Matplotlib, Plotly, Mongo, Scrapy
 
 # More interested in a presentation?
 https://docs.google.com/presentation/d/12_2SXh1ya6fVJExogjYAy0o4CeQFp7535azGPNYDrqQ/edit?usp=sharing
