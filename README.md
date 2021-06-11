@@ -36,8 +36,8 @@ Both for exploration and presentation this step allows you to get a feel for wha
 |---|---|---|---|---|
 
 
-### Notice: I just realized that my stats analysis did not save when it was pushed
-Will be rectreated.
+### Notice: I just realized that my statistical analysis did not save when it was pushed
+Will be recreated.
 
 ## The project you are viewing is most likely incomplete
 ### Be sure to check fo updates in the future
