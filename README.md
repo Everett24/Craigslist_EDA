@@ -5,7 +5,7 @@ An analysis of Craigslist listings in the 'For Sale' Category for various cities
 Craigslist is an eccomerce marketplace where anyone can post a listing and listings are sorted by location and category.
 
 ## Why Craigslist?
-Due to the above stated reasoning, the data is rather fractured and messy to start. Most people dont fill out all options for a listing or may do some goofy things in their listing to try and attract attention.
+Due to the above stated reasoning, the data is rather fractured and messy to start. Most people dont fill out all options for a listing or may do some goofy things in their listing to try and attract attention. This leads to it being a more interesting source of data to scrape and process becasue I know up front that there will be more things to clean and more creativity will be needed to explore the data.
 
 # Steps
 ## Scrape using Scrapy
@@ -20,20 +20,15 @@ The focuses for this step is to set all data to the proper type and remove null 
 Both for exploration and presentation this step allows you to get a feel for what the data means.
 
 ### Whats being explored
-Min|Mean|Median|Max Price per city
-Min|Mean|Median|Max Price per city | category
-Count per City
-Count Category per city
-Avg time listed per city
-Avg image count per category per city
 
-Total count
-Min|Mean|Median|Max Price
-Count per Category
-Min|Mean|Max Description length
-Tags Count
-Average time listed
-Average image countper category
+| min | max | mean | median | City |
+|---|---|---|---|---|
+|   |   |   |   |   |
+
+| min | max | mean | median | Category |
+|---|---|---|---|---|
+|   |   |   |   |   |
+
 
 # The project you are viewing is most likely incomplete
 ## Be sure to check fo updates in the future
