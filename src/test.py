@@ -1,3 +1,10 @@
+## Remove
+#an old og test and formatting of the project
+
+
+
+
+
 import numpy as np
 import pandas as pd
 import pyspark as ps            #Spark
@@ -15,8 +22,8 @@ from scrapy.crawler import CrawlerProcess
 client = MongoClient('localhost',27017)
 craigslist = client['craigslist']
 listings = craigslist['all_listings']
-listings.drop()#########################################comment this out beofre the next run you fool
-listings = craigslist['all_listings']
+#listings.drop()#########################################comment this out beofre the next run you fool
+#listings = craigslist['all_listings']
 
 class CraigslistScraper(scrapy.Spider):
     name = 'craigslist'
