@@ -21,13 +21,14 @@ Both for exploration and presentation this step allows you to get a feel for wha
 
 ### Whats being explored
 
-| min | max | mean | median | City |
+[Per City]
+| min | max | mean | median | per Category |
 |---|---|---|---|---|
-|   |   |   |   |   |
 
-| min | max | mean | median | Category |
+[US Overall]
+| min | max | mean | median | per Category |
 |---|---|---|---|---|
-|   |   |   |   |   |
+
 
 
 # The project you are viewing is most likely incomplete
