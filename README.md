@@ -2,7 +2,7 @@
 An analysis of Craigslist listings in the 'For Sale' Category for various cities in the US(including US territories).  It should be noted some states/regions are low enough in population they are not listed as Cities but by a region name or just the State name.
 
 ## What is Craigslist?
-Craigslist is an eccomerce marketplace where anyone can post a listing and listings are sorted by location and category.
+Craigslist is an ecommerce marketplace where anyone can post a listing and listings are sorted by location and category.
 
 ## Why Craigslist?
 Due to the above stated reasoning, the data is rather fractured and messy to start. Most people dont fill out all options for a listing or may do some goofy things in their listing to try and attract attention. This leads to it being a more interesting source of data to scrape and process becasue I know up front that there will be more things to clean and more creativity will be needed to explore the data.
